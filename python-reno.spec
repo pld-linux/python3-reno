@@ -20,7 +20,7 @@ Source0:	https://files.pythonhosted.org/packages/source/r/reno/reno-%{version}.t
 Patch0:		%{name}-mock.patch
 URL:		https://docs.openstack.org/reno/
 %if %{with python2}
-BuildRequires:	python-modules >= 1:2.7
+BuildRequires:	python3-modules >= 1:3.6
 BuildRequires:	python-pbr >= 1.4
 BuildRequires:	python-setuptools
 %if %{with tests}
@@ -53,7 +53,7 @@ BuildRequires:	sphinx-pdg >= 1.6.1
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python-modules >= 1:2.7
+Requires:	python3-modules >= 1:3.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
